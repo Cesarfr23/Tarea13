@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.AceptarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,29 +39,37 @@
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AceptarButton.Location = new System.Drawing.Point(95, 291);
+            this.AceptarButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AceptarButton.BackColor = System.Drawing.Color.White;
+            this.AceptarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AceptarButton.Location = new System.Drawing.Point(90, 293);
             this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(114, 37);
+            this.AceptarButton.Size = new System.Drawing.Size(127, 38);
             this.AceptarButton.TabIndex = 0;
             this.AceptarButton.Text = "Aceptar";
-            this.AceptarButton.UseVisualStyleBackColor = true;
+            this.AceptarButton.UseVisualStyleBackColor = false;
+            this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelarButton.Location = new System.Drawing.Point(394, 291);
+            this.CancelarButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CancelarButton.BackColor = System.Drawing.Color.White;
+            this.CancelarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelarButton.Location = new System.Drawing.Point(389, 293);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(114, 37);
+            this.CancelarButton.Size = new System.Drawing.Size(127, 38);
             this.CancelarButton.TabIndex = 1;
             this.CancelarButton.Text = "Cancelar";
-            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.UseVisualStyleBackColor = false;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(118, 150);
+            this.label1.Location = new System.Drawing.Point(113, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 2;
@@ -68,9 +77,11 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(118, 201);
+            this.label2.Location = new System.Drawing.Point(113, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 3;
@@ -78,31 +89,38 @@
             // 
             // UsuarioTextBox
             // 
+            this.UsuarioTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UsuarioTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsuarioTextBox.Location = new System.Drawing.Point(227, 144);
+            this.UsuarioTextBox.Location = new System.Drawing.Point(222, 146);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
-            this.UsuarioTextBox.Size = new System.Drawing.Size(208, 26);
+            this.UsuarioTextBox.Size = new System.Drawing.Size(221, 26);
             this.UsuarioTextBox.TabIndex = 4;
             // 
             // PassTextBox
             // 
+            this.PassTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PassTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassTextBox.Location = new System.Drawing.Point(227, 195);
+            this.PassTextBox.Location = new System.Drawing.Point(222, 197);
             this.PassTextBox.Name = "PassTextBox";
-            this.PassTextBox.Size = new System.Drawing.Size(208, 26);
+            this.PassTextBox.Size = new System.Drawing.Size(221, 26);
             this.PassTextBox.TabIndex = 5;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 368);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(632, 392);
             this.Controls.Add(this.PassTextBox);
             this.Controls.Add(this.UsuarioTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.AceptarButton);
+            this.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MinimumSize = new System.Drawing.Size(639, 435);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);

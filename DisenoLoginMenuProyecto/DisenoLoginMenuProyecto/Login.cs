@@ -16,5 +16,16 @@ namespace DisenoLoginMenuProyecto
         {
             InitializeComponent();
         }
+
+        private void AceptarButton_Click(object sender, EventArgs e)
+        {
+            MiniSupControl miniSupControl = new MiniSupControl();
+            miniSupControl.ShowDialog();
+        }
+
+        private void CancelarButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
